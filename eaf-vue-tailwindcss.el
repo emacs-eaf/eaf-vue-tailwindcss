@@ -1,6 +1,6 @@
-;;; eaf-tailwindcss.el --- Vue demo
+;;; eaf-vue-tailwindcss.el --- Vue demo
 
-;; Filename: eaf-tailwindcss.el
+;; Filename: eaf-vue-tailwindcss.el
 ;; Description: Vue demo
 ;; Author: Andy Stewart <lazycat.manatee@gmail.com>
 ;; Maintainer: Andy Stewart <lazycat.manatee@gmail.com>
@@ -9,7 +9,7 @@
 ;; Version: 0.1
 ;; Last-Updated: 2021-08-01 10:30:42
 ;;           By: Andy Stewart
-;; URL: http://www.emacswiki.org/emacs/download/eaf-tailwindcss.el
+;; URL: http://www.emacswiki.org/emacs/download/eaf-vue-tailwindcss.el
 ;; Keywords:
 ;; Compatibility: GNU Emacs 28.0.50
 ;;
@@ -44,14 +44,14 @@
 
 ;;; Installation:
 ;;
-;; Put eaf-tailwindcss.el to your load-path.
+;; Put eaf-vue-tailwindcss.el to your load-path.
 ;; The load-path is usually ~/elisp/.
 ;; It's set in your ~/.emacs like this:
 ;; (add-to-list 'load-path (expand-file-name "~/elisp"))
 ;;
 ;; And the following to your ~/.emacs startup file.
 ;;
-;; (require 'eaf-tailwindcss)
+;; (require 'eaf-vue-tailwindcss)
 ;;
 ;; No need more.
 
@@ -60,7 +60,7 @@
 ;;
 ;;
 ;; All of the above can customize by:
-;;      M-x customize-group RET eaf-tailwindcss RET
+;;      M-x customize-group RET eaf-vue-tailwindcss RET
 ;;
 
 ;;; Change log:
@@ -88,18 +88,18 @@
 (defun eaf-open-tailwindcss ()
   "Open EAF vue demo"
   (interactive)
-  (eaf-open "eaf-tailwindcss" "tailwindcss"))
+  (eaf-open "eaf-vue-tailwindcss" "tailwindcss"))
 
-(defcustom eaf-tailwindcss-keybinding
+(defcustom eaf-vue-tailwindcss-keybinding
   '(("<f12>" . "open_devtools"))
   "The keybinding of EAF Vue demo."
   :type 'cons)
 
-(add-to-list 'eaf-app-binding-alist '("tailwindcss" . eaf-tailwindcss-keybinding))
+(add-to-list 'eaf-app-binding-alist '("tailwindcss" . eaf-vue-tailwindcss-keybinding))
 
-(setq eaf-tailwindcss-module-path (concat (file-name-directory load-file-name) "buffer.py"))
-(add-to-list 'eaf-app-module-path-alist '("tailwindcss" . eaf-tailwindcss-module-path))
+(setq eaf-vue-tailwindcss-module-path (concat (file-name-directory load-file-name) "buffer.py"))
+(add-to-list 'eaf-app-module-path-alist '("tailwindcss" . eaf-vue-tailwindcss-module-path))
 
-(provide 'eaf-tailwindcss)
+(provide 'eaf-vue-tailwindcss)
 
-;;; eaf-tailwindcss.el ends here
+;;; eaf-vue-tailwindcss.el ends here

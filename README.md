@@ -12,5 +12,5 @@ This repository provides the [Tailwindcss](https://tailwindcss.com) Demo applica
 ```Elisp
 (add-to-list 'load-path "~/.emacs.d/site-lisp/emacs-application-framework/")
 (require 'eaf)
-(require 'eaf-tailwindcss)
+(require 'eaf-vue-tailwindcss)
 ```
